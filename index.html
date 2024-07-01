@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Carpooling System</h1>
+        <div id="userForm">
+            <h2>Register</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button onclick="registerUser()">Register</button>
+        </div>
+
+        <div id="tripForm" style="display: none;">
+            <h2>Book a Trip</h2>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required><br><br>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <button onclick="bookTrip()">Book Trip</button>
+        </div>
+
+        <div id="tripDetails" style="display: none;">
+            <h2>Your Trip Details</h2>
+            <p><strong>From:</strong> <span id="tripFrom"></span></p>
+            <p><strong>To:</strong> <span id="tripTo"></span></p>
+            <p><strong>Date:</strong> <span id="tripDate"></span></p>
+            <p><strong>Driver:</strong> <span id="tripDriver"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
